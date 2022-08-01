@@ -165,3 +165,94 @@
 .storymain{
   background-color: #000;
 }
+
+
+
+
+
+#page-top a{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background:#5c0a05;
+	border-radius: 5px;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size:0.6rem;
+	transition:all 0.3s;
+}
+
+#page-top a:hover{
+	background: #400602;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+	position: fixed;
+	right: 10px;
+	bottom:10px;
+	z-index: 2;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateX(100px);
+}
+
+/*　左の動き　*/
+
+#page-top.LeftMove{
+	animation: LeftAnime 0.5s forwards;
+}
+
+
+
+
+@keyframes LeftAnime{
+  from {
+    opacity: 0;
+	transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+	transform: translateX(0);
+  }
+}
+
+/*　右の動き　*/
+
+#page-top.RightMove{
+	animation: RightAnime 0.5s forwards;
+}
+@keyframes RightAnime{
+  from {
+  	opacity: 1;
+	transform: translateX(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateX(100px);
+  }
+}
+
+
+
+
+
+footer{
+  background: #3d0d0d;
+  text-align: center;
+  padding: 26px; 0;
+}
+footer p{
+  color: #e24;
+  font-size: 0.875rem;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+@media (max-width:550px){
+  .toprogo{
+    width: 75%;
+  }
+}
