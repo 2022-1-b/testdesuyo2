@@ -204,7 +204,6 @@ h4{
 p{
 	color: #c9c9c9;
   font-family: 'Shippori Mincho', serif;
-	padding-top: 10px;
 }
 
 
@@ -213,6 +212,9 @@ p{
 	padding-top: 50px;
 	padding-bottom: 30px;
   background-color: #000;
+}
+.storymain p {
+	padding-top: 10px;
 }
 
 .storymaintop{
